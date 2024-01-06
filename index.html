@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAY BLOCKPOST</title>
+</head>
+<body>
+
+    <iframe id="external-iframe" style="width: 100%; height: 100vh; border: none;"></iframe>
+
+    <script>
+        // Set the iframe source
+        const iframe = document.getElementById('external-iframe');
+        iframe.src = 'https://ikatchelo.github.io/blockpost/';
+
+        // Set a custom favicon hosted on "https://i.postimg.cc/m2hfkftB/download-13-removebg-preview.png"
+        const customFaviconUrl = 'https://i.postimg.cc/m2hfkftB/download-13-removebg-preview.png';
+        iframe.contentDocument.head.innerHTML += `<link rel="icon" type="image/x-icon" href="${customFaviconUrl}">`;
+    </script>
+
+</body>
+</html>
