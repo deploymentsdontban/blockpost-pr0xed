@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLAY BLOCKPOST</title>
+    <title>Your Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Optional: To hide scrollbars on the body */
+        }
+
+        html, body {
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,11 +23,7 @@
     <script>
         // Set the iframe source
         const iframe = document.getElementById('external-iframe');
-        iframe.src = 'https://ikatchelo.github.io/blockpost/';
-
-        // Set a custom favicon hosted on "https://i.postimg.cc/m2hfkftB/download-13-removebg-preview.png"
-        const customFaviconUrl = 'https://i.postimg.cc/m2hfkftB/download-13-removebg-preview.png';
-        iframe.contentDocument.head.innerHTML += `<link rel="icon" type="image/x-icon" href="${customFaviconUrl}">`;
+        iframe.src = 'https://testproject.com';
     </script>
 
 </body>
